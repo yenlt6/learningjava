@@ -1,5 +1,9 @@
 package com.onemount;
 
+import java.time.LocalDate;
+import java.time.LocalDateTime;
+import java.time.LocalTime;
+import java.time.format.DateTimeFormatter;
 import java.util.Scanner;
 
 /**
@@ -22,9 +26,38 @@ public class App
         String str = new String(data);
         System.out.println("dfdff" + str);
 
+        char[] ch = {'T','e','c','h','M','a','s','t','e','r'};
+        String str1 = new String(ch);
+        System.out.println("===========");
+        System.out.println(str1);
+        System.out.println(ch[0]);
+
+        String abc = null;
+        System.out.println(abc);
 
 
+        enum Season{
+            SPRING, SUMMER, AUTUMN, WINTER;
+        }
+        Season season = Season.WINTER;
+        System.out.println(season);
+        LocalDate currentDate = LocalDate.now(); // Tạo đối tượng currentDate
+        System.out.println(currentDate); // In ra màn hình ngày hôm nay
 
+        LocalTime currentTime = LocalTime.now(); //Tạo đối tượng currentTime
+        System.out.println(currentTime); //In ra màn hình thời gian hiện tại
+
+        LocalDateTime currentDateTime = LocalDateTime.now(); //Tạo đối tượng currentDateTime
+        System.out.println(currentDateTime); //In ra ngày giờ hiện tại
+
+        LocalDateTime myDateObj = LocalDateTime.now();
+        System.out.println("Before formatting: " + myDateObj);
+        DateTimeFormatter myFormatObj = DateTimeFormatter.ofPattern("dd-MMyyyy HH:mm:ss");
+        String formattedDate = myDateObj.format(myFormatObj);
+        System.out.println("After formatting: " + formattedDate);
+
+        double d = 3.14159265;
+        System.out.printf("PI = %.2f", d);
     }
 
 
