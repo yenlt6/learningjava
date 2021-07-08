@@ -8,25 +8,37 @@ import java.util.Scanner;
 
 /**
  * Hello world!
- *
  */
-public class App 
-{
-    public static void main( String[] args )
-    {
+public class App {
+    public static void main(String[] args) {
 
-        int a1 =5;
+        LearnString.getPosition();
+
+    }
+
+    public void example4() {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Nhap chuoi a:");
+        String a = sc.nextLine();
+        System.out.println("Nhap ky tu c: ");
+        String c = sc.next();
+        int postion = a.indexOf(c);
+        System.out.println(" Vij tri cua C trong a la: " + postion);
+    }
+
+    public void example3() {
+        int a1 = 5;
         float a2 = 5.0f;
-        double a3 =5.0d;
-        System.out.println(a1/3);
-        System.out.println(a2/3);
-        System.out.println(a3/3);
+        double a3 = 5.0d;
+        System.out.println(a1 / 3);
+        System.out.println(a2 / 3);
+        System.out.println(a3 / 3);
 //        String str = "abc";
         char data[] = {'a', 'b', 'c'};
         String str = new String(data);
         System.out.println("dfdff" + str);
 
-        char[] ch = {'T','e','c','h','M','a','s','t','e','r'};
+        char[] ch = {'T', 'e', 'c', 'h', 'M', 'a', 's', 't', 'e', 'r'};
         String str1 = new String(ch);
         System.out.println("===========");
         System.out.println(str1);
@@ -36,7 +48,7 @@ public class App
         System.out.println(abc);
 
 
-        enum Season{
+        enum Season {
             SPRING, SUMMER, AUTUMN, WINTER;
         }
         Season season = Season.WINTER;
@@ -60,8 +72,7 @@ public class App
         System.out.printf("PI = %.2f", d);
     }
 
-
-    public void example1(){
+    public void example1() {
         Scanner input = new Scanner(System.in);
 
         // Getting float input
@@ -80,11 +91,11 @@ public class App
         System.out.println("Text entered = " + myString);
     }
 
-    public void example(){
+    public void example() {
 
-        char a ='k';
-        char[] charVar = {'a','b','c','d'};
-        System.out.println( "Hello World Yen " + charVar[0]);
+        char a = 'k';
+        char[] charVar = {'a', 'b', 'c', 'd'};
+        System.out.println("Hello World Yen " + charVar[0]);
 
         int myNum = 5;                                          // Integer (whole number)
         float myFloatNum = 5.99f;                               // Floating point number
