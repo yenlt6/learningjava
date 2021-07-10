@@ -1,4 +1,4 @@
-package com.onemount;
+package learning.type01;
 
 import java.util.Scanner;
 //        https://codelearn.io/learning/java-fundamentals/1198357
