@@ -1,5 +1,7 @@
 # Data Structure
 
+https://freetuts.net/ref/ham-foreach-trong-arraylist-java-538.html
+
 
 Hỏi: Array khác gì với ArrayList trong Java?
 

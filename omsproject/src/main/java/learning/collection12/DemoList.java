@@ -4,7 +4,7 @@ import java.util.*;
 
 
 public class DemoList {
-  private DemoList() {}
+  public DemoList() {}
 
   public static void demoArray() {
     String[] array = new String[] {"Thắng", "Dũng", "Trung", "Đức", "Cường"};
@@ -12,20 +12,25 @@ public class DemoList {
     Object[] arrObj = new Object[5];
     arrObj[0] = "Hello";
     arrObj[1] = new Person("John", "France");
+    System.out.println(arrObj[1]);
   }
   public static void demoArrayList1() {
     ArrayList<String> manNames = new ArrayList<>(List.of("Thắng", "Dũng", "Trung", "Đức", "Cường"));
     //Dùng vòng lặp for duyệt collection
+    System.out.println("Phan tu cua array list String lan luot la");
+//    for(int i=0;i<manNames.size();i++){
+//      System.out.println(manNames.get(i));
+//    }
     for (String manName : manNames) {
       System.out.println(manName);
     }
   }
   public static void demoArrayList2() {
     ArrayList<String> manNames = new ArrayList<>(List.of("Thắng", "Dũng", "Trung", "Đức", "Cường"));
-    //dùng stream().forEach(System.out::println);
+    manNames.stream().forEach(System.out::println);
     //System.out::println gọi là function reference
     //(name -> System.out.println(name) gọi là Lambda function
-    manNames.stream().forEach(name -> System.out.println(name));
+//    manNames.stream().forEach(name -> System.out.println(name));
   }
   public static void demoArrayList3() {
     ArrayList<String> manNames = new ArrayList<>(List.of("Thắng", "Dũng", "Trung", "Đức", "Cường"));
