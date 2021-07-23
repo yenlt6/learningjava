@@ -17,6 +17,7 @@ public class DemoList {
   public static void demoArrayList1() {
     ArrayList<String> manNames = new ArrayList<>(List.of("Thắng", "Dũng", "Trung", "Đức", "Cường"));
     //Dùng vòng lặp for duyệt collection
+    System.out.println("In ca ma xem sao " + manNames);
     System.out.println("Phan tu cua array list String lan luot la");
 //    for(int i=0;i<manNames.size();i++){
 //      System.out.println(manNames.get(i));

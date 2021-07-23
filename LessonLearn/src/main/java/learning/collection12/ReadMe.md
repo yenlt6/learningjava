@@ -1,5 +1,9 @@
 # Data Structure
 
+Một số link học hay:
+https://shareprogramming.net/arraylist-trong-java-voi-vi-du-cu-the/
+
+
 https://freetuts.net/ref/ham-foreach-trong-arraylist-java-538.html
 
 

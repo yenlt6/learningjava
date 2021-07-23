@@ -8,7 +8,11 @@ class Main {
 
 
     public static void main (String[] args) {
-        DemoList.demoArray();
+//        DemoList.demoArray();
+//        DemoList.demoArrayList1();
+//        DemoMap.demoMap1();
+        DemoSet.demoLinkedHashSet();
+
 
     }
 

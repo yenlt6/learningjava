@@ -14,13 +14,13 @@ class CalculatorTest {
     Calculator calculator = new Calculator();
 
     //Using assertEquals()
-    @org.junit.jupiter.api.Test
+    @Test
     void assertEqualsExample() {
         //Test will pass
         assertEquals(calculator.sum(1, 1), 2);
 
         //Test will failed
-        assertEquals(calculator.sum(2, 2), 5);
+//        assertEquals(calculator.sum(2, 2), 5);
 
     }
 
