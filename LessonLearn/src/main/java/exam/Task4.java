@@ -52,9 +52,6 @@ public class Task4 {
             arrayList.add(scanner.nextInt());
         }
 
-
-
-
         return arrayList;
     }
 }

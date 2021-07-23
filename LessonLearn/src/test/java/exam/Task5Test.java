@@ -32,11 +32,13 @@ public class Task5Test extends TestCase {
         intSet.add(9);
         intSet.add(10);
 
-
         task5.removeAllNumbersGreaterThan10(intSet);
 
         assertThat(task5.removeAllNumbersGreaterThan10(intSet)).isNotNull()
                 .contains(2)
+                .contains(8)
+                .contains(9)
+                .contains(10)
                 .contains(5);
 
 
