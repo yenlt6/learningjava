@@ -37,12 +37,10 @@ public class Task1 {
     public static void main(String[] args) throws CheckingInputException {
         Scanner scanner = new Scanner(System.in);
         System.out.println("Nhập vào từ bàn phím một chuỗi chứa các số, các số được ngăn cách bởi dấu , ");
-//        String str = "1,5,8, 9, 2,10";
         String str = scanner.nextLine();
 
         String[] temp = str.replace(" ", "").split(",");
-         for (int i = 0; i < temp.length; i++) {
-
+        for (int i = 0; i < temp.length; i++) {
             System.out.println(temp[i]);
             if (temp[i].contains("[a-zA-Z]+") == true) {
                 System.out.println("Chứa ký tự");
