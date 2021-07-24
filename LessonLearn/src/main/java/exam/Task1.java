@@ -38,10 +38,10 @@ public class Task1 {
         String str = scanner.nextLine();
 
 
-//        if (str.matches("[a-zA-Z]+")) {
-//            System.out.println("Chứa ký tự");
-//            throw new CheckingInputException("String contains character which cannot be converted into number");
-//        }
+        if (str.matches("[a-zA-Z]+")) {
+            System.out.println("Chứa ký tự");
+            throw new CheckingInputException("String contains character which cannot be converted into number");
+        }
 
 
         String[] temp = str.replace(" ", "").split(",");
