@@ -1,6 +1,5 @@
 package exam;
 
-import learning.collection12.Person;
 
 import java.util.*;
 
@@ -13,6 +12,7 @@ public class Task2 {
         mapCat1 = (HashMap<Integer, Cat>) createMap();
         System.out.println("Danh sách của Cat: ");
         mapCat1.values().forEach(System.out::println);
+
 
     }
 

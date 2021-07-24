@@ -1,11 +1,11 @@
 package exam;
 
 import junit.framework.TestCase;
-import learning.unittest13.Calculator;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
 import java.util.HashSet;
+import java.util.Iterator;
 import java.util.List;
 import java.util.Set;
 
@@ -31,8 +31,12 @@ public class Task5Test extends TestCase {
         intSet.add(8);
         intSet.add(9);
         intSet.add(10);
-
-        task5.removeAllNumbersGreaterThan10(intSet);
+//        task5.removeAllNumbersGreaterThan10(intSet);
+        Iterator<Integer> iterator = task5.removeAllNumbersGreaterThan10(intSet).iterator();
+        while (iterator.hasNext()) {
+            int number = iterator.next();
+            assertThat(number).isLessThanOrEqualTo(10);
+                   }
 
         assertThat(task5.removeAllNumbersGreaterThan10(intSet)).isNotNull()
                 .contains(2)
@@ -40,7 +44,6 @@ public class Task5Test extends TestCase {
                 .contains(9)
                 .contains(10)
                 .contains(5);
-
 
 
     }

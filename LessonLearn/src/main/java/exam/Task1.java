@@ -1,7 +1,5 @@
 package exam;
 
-import learning.learnexception1516.AgeCheckingException;
-
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collections;
@@ -39,10 +37,17 @@ public class Task1 {
         System.out.println("Nhập vào từ bàn phím một chuỗi chứa các số, các số được ngăn cách bởi dấu , ");
         String str = scanner.nextLine();
 
+
+//        if (str.matches("[a-zA-Z]+")) {
+//            System.out.println("Chứa ký tự");
+//            throw new CheckingInputException("String contains character which cannot be converted into number");
+//        }
+
+
         String[] temp = str.replace(" ", "").split(",");
         for (int i = 0; i < temp.length; i++) {
             System.out.println(temp[i]);
-            if (temp[i].contains("[a-zA-Z]+") == true) {
+            if (temp[i].matches("[a-zA-Z]+")) {
                 System.out.println("Chứa ký tự");
                 throw new CheckingInputException("String contains character which cannot be converted into number");
             }
