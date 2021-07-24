@@ -12,7 +12,7 @@ public class Task2 {
         mapCat1 = (HashMap<Integer, Cat>) createMap();
         System.out.println("Danh sách của Cat: ");
         mapCat1.values().forEach(System.out::println);
-
+//        printCats(convertMapToSet(createMap()));
 
     }
 
@@ -33,15 +33,20 @@ public class Task2 {
         return mapCat;
     }
 
-    public Set<Cat> convertMapToSet(Map<Integer, Cat> map) {
-        //        Set<Cat> cats = new HashSet<>();
-        //write your code here
+    public static Set<Cat> convertMapToSet(Map<Integer, Cat> map) {
+        Set<Cat> catSet = new HashSet<>();
+        Set<Integer> keys = map.keySet();
+        for (Integer key : keys){
+            catSet.add(map.get(key));
+        }
+        return catSet;
 
-        return null;
+
     }
 
-    public void printCats(Set<Cat> cats) {
-        //write your code here
+    public static void printCats(Set<Cat> cats) {
+        for (Cat cat : cats)
+            System.out.println("Name: " + cat.getName() + " Age: " + cat.getAge());
     }
 
 
